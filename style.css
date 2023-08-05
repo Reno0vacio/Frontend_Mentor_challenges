@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 1000px;
+}
+.component {
+    display: flex;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    width: 600px;
+}
+.score {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 430px;
+    width: 300px;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    margin-left: 0;
+}
+.circle {
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+.circle :first-child {
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 45px;
+    margin-bottom: 0px;
+}
+#great {
+    font-size: 30px;
+    font-weight: 600;
+}
+/*.summary-title {
+    font-weight: 800;
+    text-align: justify;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 18px;
+}
+*/
+.summary {
+    width: 300px;
+    margin: auto;
+}
+.Summary-blocks {
+    display: inline-block;
+    width: 250px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.reaction {
+    background-color: rgba(255, 255, 0, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+.memory {
+    background-color: rgba(255, 255, 0, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+}
+.visual {
+    background-color: rgba(200, 199, 255, 0.2);
+    color: hsl(234, 85%, 45%);
+
+}
+#button {
+    margin-top: 80px;
+    margin-left: 20px;
+    padding-top: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 250px;
+    height: 50px;
+    background-color:hsl(224, 30%, 27%)
+}
+p {
+    font-size: 18px;
+}
+.score .lighter {
+    color: rgba(0, 0, 0, 0.4)
+}
+.evenlighter {
+    color: rgba(78, 33, 202, 1);
+    margin-top: 0px
+}
+.sum-num  {
+    display: inline-block;
+    padding-left: 70px;
+    color: black;
+    font-weight: 500;
+}
