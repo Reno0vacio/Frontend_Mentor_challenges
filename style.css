@@ -1,12 +1,14 @@
+/* Meg kell nézni hogy hogyan kell vertikálisan és horizontálisan 
+középre helyezni egy elementet
+*/
 body {
-    display: flex;
-    align-items: center;
-    height: 1000px;
+    height: 700px;
+    width: 700px;
+    margin: auto;
 }
 .component {
     display: flex;
     font-family: 'Hanken Grotesk', sans-serif;
-    margin: auto;
     text-align: center;
     background-color: white;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.144);
@@ -19,7 +21,6 @@ body {
     width: 300px;
     border-radius: 25px;
     color: hsl(0, 0%, 100%);
-    margin-left: 0;
 }
 .circle {
     border-radius: 50%;
@@ -47,15 +48,16 @@ body {
 }
 */
 .summary {
-    width: 300px;
-    margin: auto;
+    width: 140px;
 }
 .Summary-blocks {
-    display: inline-block;
-    width: 250px;
+    display: flex;
+    align-items:center;
+    width: 260px;
     justify-content: space-between;
     margin-bottom: 10px;
     border-radius: 15px;
+    margin-left: 25px;
 }
 .reaction {
     background-color: rgba(255, 255, 0, 0.1);
