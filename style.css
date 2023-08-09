@@ -1,12 +1,9 @@
-/* Meg kell nézni hogy hogyan kell vertikálisan és horizontálisan 
-középre helyezni egy elementet
-*/
 body {
     height: 700px;
     width: 700px;
     margin: auto;
 }
-.component {
+.c {
     display: flex;
     font-family: 'Hanken Grotesk', sans-serif;
     text-align: center;
@@ -15,49 +12,47 @@ body {
     border-radius: 25px;
     width: 600px;
 }
-.score {
+.c__score {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    height: 430px;
+    height: 450px;
     width: 300px;
     border-radius: 25px;
     color: hsl(0, 0%, 100%);
 }
-.circle {
+.c__score-circle {
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     height: 200px;
     width: 200px;
     display: inline-block;
 }
-.circle :first-child {
+.c__score-circle-lg-number {
     font-size: 70px;
     font-weight: 900;
     margin-top: 45px;
     margin-bottom: 0px;
 }
-#great {
+.c__score-circle-great {
     font-size: 30px;
     font-weight: 600;
 }
-/*.summary-title {
-    font-weight: 800;
-    text-align: justify;
-    font-size: 25px;
-    margin-bottom: 0;
-    margin-top: 18px;
+.score .lighter {
+    color: rgba(0, 0, 0, 0.4)
 }
-*/
-.summary {
-    width: 140px;
+.evenlighter {
+    color: rgba(78, 33, 202, 1);
+    margin-top: 0px
 }
-.Summary-blocks {
-    display: flex;
+.summary__title-text {
+    width: 300px;
+}
+.summary__blocks {
+    display: inline-block;
+    width: 250px;
     align-items:center;
-    width: 260px;
     justify-content: space-between;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    margin-left: 25px;
+    border-radius: 15px;;
+
 }
 .reaction {
     background-color: rgba(255, 255, 0, 0.1);
@@ -75,7 +70,7 @@ body {
     color: hsl(234, 85%, 45%);
 
 }
-#button {
+.btn {
     margin-top: 80px;
     margin-left: 20px;
     padding-top: 15px;
@@ -88,16 +83,22 @@ body {
 p {
     font-size: 18px;
 }
-.score .lighter {
-    color: rgba(0, 0, 0, 0.4)
+svg {
+    display: inline;
 }
-.evenlighter {
-    color: rgba(78, 33, 202, 1);
-    margin-top: 0px
+.summary__names {
+    display: inline;
+    width: 40px;
+    height: 20px;
 }
 .sum-num  {
-    display: inline-block;
-    padding-left: 70px;
+    width: 100px;
+    margin: 0;
     color: black;
     font-weight: 500;
+    display: inline;
+}
+.asd {
+    width: 60px;
+    margin-right: 0px;
 }
