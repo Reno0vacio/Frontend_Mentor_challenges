@@ -2,17 +2,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 50vw;
+    height: 800px;
+
 }
+@media screen and (max-width: 286px)  {
+   body {
+    margin: 0px;
+   }
+}
+
 .c {
     display: flex;
     font-family: 'Hanken Grotesk', sans-serif;
     text-align: center;
-    background-color: white;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.144);
     border-radius: 25px;
+    width: 600px;
 }
+@media screen and (max-width: 610px) {
+    .c {
+        flex-wrap: wrap;
+        width: 300px;
+    }
+}
+
 .c__score {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     height: 450px;
@@ -20,6 +33,7 @@ body {
     border-radius: 25px;
     color: hsl(0, 0%, 100%);
 }
+
 .c__score-circle {
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
@@ -27,31 +41,36 @@ body {
     width: 200px;
     display: inline-block;
 }
+
 .c__score-circle-lg-number {
     font-size: 70px;
     font-weight: 900;
     margin-top: 45px;
     margin-bottom: 0px;
 }
+
 .c__score-circle-great {
     font-size: 30px;
     font-weight: 600;
 }
+
 .score .lighter {
     color: rgba(0, 0, 0, 0.4)
 }
+
 .evenlighter {
     color: rgba(253, 253, 253, 0.562);
     margin-top: 0px
 }
+
 .summary {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
     width: 330px;
-    justify-content: center;
 }
+
 .summary__blocks {
     display: flex;
     align-items: center;
@@ -61,36 +80,46 @@ body {
     height: 50px;
     border-radius: 15px;
 }
-.summary-heading {
-    
+
+#summary-heading {
+    margin-right: 160px;
+
 }
-.summary__blocks :first-child {
-    padding-left: 5px;
+.summary__numbers {
     display: flex;
+    margin-right: 10px;
 }
+
 .bold {
     font-weight: 700;
     color: black
 }
+
 .gray {
     color: gray
 }
+
 .reaction {
     background-color: rgba(255, 255, 0, 0.1);
     color: hsl(0, 100%, 67%);
 }
+
 .memory {
     background-color: rgba(255, 255, 0, 0.1);
     color: hsl(39, 100%, 56%);
 }
+
 .verbal {
     color: hsl(166, 100%, 37%);
+    background-color: rgba(23, 240, 59, 0.1);
 }
+
 .visual {
     background-color: rgba(200, 199, 255, 0.2);
     color: hsl(234, 85%, 45%);
 
 }
+
 .btn {
     margin: auto;
     padding-top: 15px;
@@ -98,23 +127,17 @@ body {
     border-radius: 50px;
     width: 250px;
     height: 30px;
-    background-color:hsl(224, 30%, 27%)
+    background-color: hsl(224, 30%, 27%)
 }
+
 p {
     font-size: 18px;
 }
-.summary__names {
-    display: inline;
-    width: 40px;
-    height: 20px;
-}
-.test {
-display: flex;
-margin-right: 10px;
-}
+
 bold {
     font-weight: 900px;
 }
+
 img {
     margin: auto;
 }
